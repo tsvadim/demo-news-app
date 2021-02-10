@@ -15,16 +15,15 @@ is a separate Yii application.
 The template is designed to work in a team development environment. It supports
 deploying the application in different environments.
 
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
 
 INSTALLATION
 ------------
 
-### Install via vagrant (Установка при помощи vagrant)
+### Install via vagrant
 
 ```vagrant up```
 
-### Install via Composer (Установка при помощи Composer)
+### Install via Composer
 
 Если у вас нет [Composer](http://getcomposer.org/), вы можете скачать его и установить следуя инструкции
 [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
@@ -32,45 +31,20 @@ On Linux and Mac OS X, you'll run the following commands:
 
 ```curl -sS https://getcomposer.org/installer | php```
 
-If you need global composer, use the following command (Если вам нужен глобальный composer, используйте следующую команду):
+If you need global composer, use the following command:
  
 ```mv composer.phar /usr/local/bin/composer```
 
 
-If composer has global installation, use (Если composer установлен глобально, используйте):
+You can then install the application using the following commands:
 
-```php composer```
-
-If composer installed only for this project, use (Если composer установлен только для этого проекта, используйте):
-
-```php composer.phar```
-
-
-You can then install the application using the following commands (После этого вы можете установить приложение, используя следующие команды):
-
-``` php composer.phar global require "fxp/composer-asset-plugin:~1.1.1" ```
 
 ``` php composer.phar update ```
 
-###Configuration application (Настройка приложения)
-
-Выберем конфигурацию приложения Development (Разреботка) или Production (Продакшн):
+Выберем конфигурацию приложения Development or Production:
 
 ``` php init ```
 
-Выполним настройку приложения:
-
-####Внимание! Если возникли трудности с кодировкой, попробовать команду "chcp 65001" если не помогло, переключится на английский язык в файле конфинурации
-
-```php yii start```
-
-После успешной настройки приложения, установщик предложит вам создать Базу Данных, для этого выполните команду:
-
-```php yii migrate/up```
-
-Создаём администратора.
-
-```php yii user/admin```
 
 DIRECTORY STRUCTURE
 -------------------
