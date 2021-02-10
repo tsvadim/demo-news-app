@@ -1,0 +1,34 @@
+# Your personal GitHub token
+github_token: <your-personal-github-token>
+# Read more: https://github.com/blog/1509-personal-api-tokens
+# You can generate it here: https://github.com/settings/tokens
+
+# Guest OS timezone Europe/Kiev OR Europe/Moscow
+timezone: Europe/London
+
+# Are we need check box updates for every 'vagrant up'?
+box_check_update: false
+
+# Virtual machine name
+machine_name: app2web
+
+# Hosts name
+domains : {
+  frontend: 'app2web.test',
+  backend:  'backend.app2web.test'
+}
+
+# Virtual machine IP
+ip: 192.168.83.137
+
+# Virtual machine CPU cores number
+cpus: 1
+
+# Virtual machine RAM
+memory: 1024
+
+# admin password (min 6 len)
+admin_pass: adminpass
+
+# Locale en_US OR ru_RU
+system_locale: en_US
